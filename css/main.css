@@ -1,0 +1,46 @@
+@font-face {
+	font-family: clock;
+	src: url('../fonts/alarm clock.ttf');
+}
+
+#clock{
+	border: 250px darkred ridge;
+	text-align: center;
+	background-color: black;
+}
+#clock *{
+	display: inline-block;
+	font-family: clock, Impact;
+	font-size: 70px;
+	color: red;
+}
+
+#ampm{
+	font-size: 35px;
+}
+
+/* ANALOG TEST */
+#clockCircle{
+	position: relative;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: black 3px double;
+	margin: 0 auto;
+}
+#secondsHand{
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background-color: black;
+	height: 200px;
+	width: 15px;
+	margin: 0 auto;
+	transform-origin: bottom;
+	transition: all .1s linear;
+}
+
+
+/* #secondsHand:hover{
+	transform: rotate(45deg);
+} */
